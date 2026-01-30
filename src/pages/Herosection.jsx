@@ -30,6 +30,20 @@ function Herosection() {
          
       </div>
   </section>
+
+  <section>
+    <div className='container'>
+      <div className='row'>
+        <div className='col-lg-6 col-sm-12 col-md-12'>
+          <div className='main_heading'>
+            <h1>Applied Artificial Intelligence</h1>
+            <p>Where Cutting-Edge AI Meets Real-World Impact</p>
+            <button>Get Started Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
  
 
     </div>

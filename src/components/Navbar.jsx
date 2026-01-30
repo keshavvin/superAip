@@ -16,9 +16,11 @@ function Navbar() {
                 </a> 
                 </div> 
                 <div className='hidden md:flex space-x-10'> 
-                     <NavLink to="/" className={navClass}>
-                         <span className='text-white'>Home</span>
-                         <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-purple-50 transition-all duration-300 group-hover:w-full"></span></NavLink>
+                      
+                     <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-500 font-bold" : "text-gray-500" } > 
+                        <span className='text-white'>Home</span>
+                        <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-50 transition-all duration-300 group-hover:w-full'></span>
+                    </NavLink> 
                     <NavLink to="/about" className={navClass } > 
                           <span className={navClass } > About Us</span>
                         <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-50 transition-all duration-300 group-hover:w-full'></span>
@@ -28,23 +30,23 @@ function Navbar() {
                         <span className='text-white'>Enterprises Solutions</span>
                         <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-50 transition-all duration-300 group-hover:w-full'></span>
                     </NavLink> 
-                    <NavLink to="/about22" className={({ isActive }) => isActive ? "text-blue-500 font-bold" : "text-gray-500" } > 
+                    <NavLink to="/Educationsolutions" className={({ isActive }) => isActive ? "text-blue-500 font-bold" : "text-gray-500" } > 
                         <span className='text-white'>Education solutions</span>
                         <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-50 transition-all duration-300 group-hover:w-full'></span>
                     </NavLink> 
-                    <a href='#Industries' className='relative text-white/80 transition duration-300 hover:text-pink-800 group'>
+                     <NavLink to="/Industries" className={({ isActive }) => isActive ? "text-blue-500 font-bold" : "text-gray-500" } > 
                         <span className='text-white'>Industries</span>
                         <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-50 transition-all duration-300 group-hover:w-full'></span>
-                    </a>
-                    <a href='#Partners' className='relative text-white/80 transition duration-300 hover:text-pink-800 group'>
+                    </NavLink> 
+                    
+                    <NavLink to="/Partners" className={({ isActive }) => isActive ? "text-blue-500 font-bold" : "text-gray-500" } > 
                         <span className='text-white'>Partners</span>
                         <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-50 transition-all duration-300 group-hover:w-full'></span>
-                    </a> 
-
-                     <a href='#' className='head_btn  hover:bg-purple-600 transition'> 
-                        <button className="text-white-900 group-hover:text-white">Contact</button> 
-                    </a>
-                  
+                    </NavLink> 
+                     
+                    
+                    <NavLink to="/contact" className={({ isActive }) =>`head_btn transition hover:bg-purple-600 ${ isActive ? "bg-purple-600 text-white" : "" }` } > Contact
+                    </NavLink> 
                 </div>
                 {/* mobile button */} 
                  

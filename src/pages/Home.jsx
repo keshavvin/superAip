@@ -3,8 +3,9 @@ import TeamSections from "./TeamSections"
 function Home() {
   return (
     <>
-       <Herosection/>
+    <Herosection/>
         <TeamSections/>
+        
     </>
   )
 }
