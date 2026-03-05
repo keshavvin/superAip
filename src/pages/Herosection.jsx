@@ -1,53 +1,112 @@
-import React from 'react'
-
+import React from "react"; 
 function Herosection() {
-  return (
-    <div>
-      <section className="text-gray-400 bg-gray-900 body-font" style={{  backgroundImage: "url('https://superai-future-site.lovable.app/assets/hero-bg-DpjqJqNQ.jpg')",  }}>
-       <div className='container'>
-          <div className='row'>
-            <div className='col-lg-12 col-sm-12 col-md-12'>
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Before they sold out
-            <br className="hidden lg:inline-block"/>readymade gluten
+  return ( 
+        <section
+      style={{
+        position: "relative",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        overflow: "hidden",
+        color: "#fff",
+      }}
+    >
+      {/* Background Video */}
+      <video
+        src="/videos/super_aip_video.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: -2,
+          height: "100vh",
+    zIndex: 1,
+    backgroundImage:
+      "url(./public/home_bnr_bg_Edited.png)",
+   position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100vh",
+    objectFit: "cover",
+    zIndex: 1,
+    backgroundImage: "url(/home_bnr_bg_Edited.png)",
+    backgroundSize: "cover",
+    backgroundPosition: "50% center",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed"
+        }}
+      />
+
+      {/* Dark Overlay */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "rgba(0,0,0,0.5)",
+          zIndex: -1,
+        }}
+      />
+
+      {/* Content Container */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "1300px",
+          margin: "0 auto",
+          display: "flex",
+          alignItems: "center",
+          padding: "20px",
+        }}
+      >
+        {/* Left Content */}
+        <div style={{ flex: 1 ,    zIndex: 1}}>
+          <h1 style={{ fontSize: "90px",
+    lineHeight: "90px",
+    color: "#132976", 
+    marginBottom: "20px",fontFamily: "Segoe UI", 
+    fontWeight: "lighter"}}>
+          Applied Artificial Intelligence through data and AI
           </h1>
+          <p style={{    fontSize: "22px",
+    color: "#000",
+    fontFamily: "Segoe UI"}}>
+            Modernize systems, automate operations and activate data 2X faster through our AI-driven platform.
+          </p>
+          <div className="btn_div d-flex justify-content-left align-items-center mt-4">
+            <div className="bnr_btn_home">
+              <button
+            style={{
+              padding: "10px 20px",
+    background: "#19369D",
+    color: "#fff",
+    borderRadius: "8px",
+    maxWidth: "max-content",
+    border: "none",
+    cursor: "pointer"
+            }}
+          >
+            Get Started
+          </button>
             </div>
           </div>
+          
         </div>
 
-      </section>
-    <section className="text-gray-400 bg-gray-900 body-font" style={{  backgroundImage: "url('https://superai-future-site.lovable.app/assets/hero-bg-DpjqJqNQ.jpg')",  }}>
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Before they sold out
-            <br className="hidden lg:inline-block"/>readymade gluten
-          </h1>
-          <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-          <div className="flex justify-center">
-            <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Button</button>
-            <button className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
-          </div>
-        </div>
-         
+        {/* Right Blank Side */}
+        <div style={{ flex: 1 }} />
       </div>
-  </section>
-
-  <section>
-    <div className='container'>
-      <div className='row'>
-        <div className='col-lg-6 col-sm-12 col-md-12'>
-          <div className='main_heading'>
-            <h1>Applied Artificial Intelligence</h1>
-            <p>Where Cutting-Edge AI Meets Real-World Impact</p>
-            <button>Get Started Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-
-    </div>
-  )
+    </section>
+    
+  
+  );
 }
 
-export default Herosection
+export default Herosection;

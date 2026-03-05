@@ -5,9 +5,17 @@ function Navbar2() {
   const [open, setOpen] = useState(false)
 
   return (
+    
     <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-sm py-4 px-8 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
-
+<header className="header">
+      <h2>Logo</h2>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 text-3xl font-bold text-white">
           Super<span className="text-purple-400">AIP</span>

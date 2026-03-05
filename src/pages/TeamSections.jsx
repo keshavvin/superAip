@@ -46,4 +46,4 @@ function TeamSections() {
   )
 }
 
-export default TeamSections
+export default TeamSection
